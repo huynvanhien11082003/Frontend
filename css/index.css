@@ -73,7 +73,7 @@
 
 .left-menu .nav-link:hover, 
 .left-menu .nav-link.active {
-    background-color: #ffffff; 
+    background-color: #ffffff !important; 
     color: #ee4d2d !important; 
     
     border-left-color: #ee4d2d; 
@@ -142,6 +142,23 @@
     background-color: #f9f9f9;
     color: #ee4d2d; 
     padding-left: 25px; 
+}
+
+.sport-link {
+    display: block;
+    padding: 15px 30px; 
+    color: #555; 
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s;
+    border-bottom: 1px solid #f1f1f1; 
+}
+
+.sport-link:hover, 
+.sport-link.active-item {
+    background-color: #e0e0e0; 
+    color: #000; 
+    font-weight: 500;
 }
 
 
@@ -272,6 +289,105 @@ footer.bg-black {
 .form-control::placeholder {
     color: #888;
     font-size: 13px;
+}
+
+.filter-btn {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.filter-btn::after {
+    margin-left: 5px; 
+    font-size: 10px;
+}
+
+.filter-btn:hover {
+    color: #ee4d2d; 
+}
+
+.badge-ship {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    color: #333;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Tên sản phẩm */
+.product-name {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.product-name:hover {
+    color: #ee4d2d;
+}
+
+/* Giá tiền */
+.old-price {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+.yame-pagination .page-link {
+    border: none; 
+    background-color: transparent; 
+    color: #666; 
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px; 
+    padding: 5px 10px; 
+    border-radius: 0; 
+    transition: all 0.3s ease;
+}
+
+
+.yame-pagination .page-link:hover {
+    color: #000; 
+    background-color: transparent; 
+}
+
+
+.yame-pagination .page-item.active .page-link {
+    background-color: transparent !important; 
+    color: #000 !important; 
+    font-weight: bold;
+}
+
+
+.yame-pagination .page-link:focus {
+    box-shadow: none;
+}
+
+.color-dot {
+    display: inline-block;
+    width: 18px;  
+    height: 18px;
+    border-radius: 50%; 
+    margin-right: 8px; 
+    border: 1px solid #eee; 
+    flex-shrink: 0; 
 }
 @media (min-width: 992px) {
     .dropdown:hover .dropdown-menu {
