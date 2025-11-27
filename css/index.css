@@ -517,6 +517,80 @@ footer.bg-black {
     border-bottom: none;
 }
 
+.yame-input {
+    border-radius: 0; 
+    height: 45px; 
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.yame-input:focus {
+    box-shadow: none; 
+    border-color: #000; 
+}
+
+
+.btn-yame {
+    border-radius: 0;
+    transition: all 0.3s ease;
+    border: 1px solid #000;
+}
+
+.btn-yame:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-outline-secondary {
+    border-radius: 0;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f8f9fa;
+    color: #000;
+    border-color: #000;
+}
+
+
+.quantity-control {
+    height: 40px;
+    border: 1px solid #ddd;
+}
+
+.quantity-control button {
+    width: 30px;
+    height: 100%;
+    border-radius: 0;
+}
+
+.quantity-control button:hover {
+    background-color: #f0f0f0;
+}
+
+.quantity-control input:focus {
+    box-shadow: none;
+}
+
+
+.cart-img img {
+    mix-blend-mode: multiply; 
+}
+
+
+.bi-trash {
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.bi-trash:hover {
+    color: #dc3545; 
+}
+
+/* Link quay lại */
+.text-decoration-underline {
+    text-underline-offset: 4px; 
+}
 @keyframes fadeUp {
     from {
         opacity: 0;

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - YaMe.vn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <div class="placeholder-header" style="height: 80px; border-bottom: 1px solid #eee;"></div> 
+    <section class="cart-page py-5">
+        <div class="container">
+            
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-normal" style="font-size: 28px;">Giỏ hàng của bạn</h2>
+                <a href="index.html" class="text-decoration-none text-dark text-decoration-underline" style="font-size: 14px;">Tiếp tục mua sắm</a>
+            </div>
+
+            <div class="row text-uppercase text-muted small border-bottom pb-2 d-none d-md-flex" style="font-size: 11px; letter-spacing: 1px;">
+                <div class="col-md-6">Sản phẩm</div>
+                <div class="col-md-3 text-center">Số lượng</div>
+                <div class="col-md-3 text-end">Tổng</div>
+            </div>
+
+            <div class="cart-list">
+                
+                <div class="row align-items-center py-4 border-bottom cart-item">
+                    <div class="col-md-6 d-flex align-items-start gap-3">
+                        <div class="cart-img" style="width: 100px; flex-shrink: 0;">
+                            <img src="img/qu-n-short-no-style-m93-xam-reu-1174881784.png" alt="SP1" class="w-100 bg-light">
+                        </div>
+                        <div class="cart-info">
+                            <a href="#" class="text-decoration-none text-dark fw-bold small d-block mb-2">Quần Tây Smart Casual Co Giãn Lưng Tùy Chỉnh The CEO 012 Xám Đen</a>
+                            <div class="price mb-1">
+                                <span class="text-decoration-line-through text-muted small me-2">472.150₫</span>
+                                <span class="fw-bold">472.150₫</span> </div>
+                            <div class="text-muted small">Size: 29</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 d-flex align-items-center justify-content-center mt-3 mt-md-0">
+                        <div class="quantity-control d-flex align-items-center border">
+                            <button class="btn btn-sm btn-light border-0 px-2" onclick="decreaseQty(this)">-</button>
+                            <input type="text" value="1" class="form-control border-0 text-center p-0" style="width: 40px; font-size: 14px;">
+                            <button class="btn btn-sm btn-light border-0 px-2" onclick="increaseQty(this)">+</button>
+                        </div>
+                        <button class="btn border-0 ms-3 text-muted" title="Xóa"><i class="bi bi-trash"></i></button>
+                    </div>
+
+                    <div class="col-md-3 text-end mt-3 mt-md-0 fw-bold">
+                        472.150₫
+                    </div>
+                </div>
+
+                <div class="row align-items-center py-4 border-bottom cart-item">
+                    <div class="col-md-6 d-flex align-items-start gap-3">
+                        <div class="cart-img" style="width: 100px; flex-shrink: 0;">
+                            <img src="img/ao-polo-no-style-m27-den-1174885578.png" alt="SP2" class="w-100 bg-light">
+                        </div>
+                        <div class="cart-info">
+                            <a href="#" class="text-decoration-none text-dark fw-bold small d-block mb-2">Áo polo Basic Co Giãn Thoáng Mát Non Branded 056 Hồng</a>
+                            <div class="price mb-1">
+                                <span class="text-decoration-line-through text-muted small me-2">277.000₫</span>
+                                <span class="fw-bold">277.000₫</span>
+                            </div>
+                            <div class="text-muted small">Size: S</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 d-flex align-items-center justify-content-center mt-3 mt-md-0">
+                        <div class="quantity-control d-flex align-items-center border">
+                            <button class="btn btn-sm btn-light border-0 px-2" onclick="decreaseQty(this)">-</button>
+                            <input type="text" value="1" class="form-control border-0 text-center p-0" style="width: 40px; font-size: 14px;">
+                            <button class="btn btn-sm btn-light border-0 px-2" onclick="increaseQty(this)">+</button>
+                        </div>
+                        <button class="btn border-0 ms-3 text-muted" title="Xóa"><i class="bi bi-trash"></i></button>
+                    </div>
+
+                    <div class="col-md-3 text-end mt-3 mt-md-0 fw-bold">
+                        277.000₫
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-end mt-5">
+                <div class="col-md-5 col-lg-4">
+                    
+                    <div class="bg-light p-3 mb-3">
+                        <div class="d-flex justify-content-between mb-2 small">
+                            <span class="text-muted">Giá gốc</span>
+                            <span class="text-decoration-line-through text-muted">774.000 VND</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center p-2 rounded" style="background-color: #fff8d1;">
+                            <span class="fw-bold small">Tiết kiệm</span>
+                            <span class="fw-bold small">24.850 VND</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-end mb-3">
+                        <span class="text-muted small">Tổng số tiền ước tính</span>
+                        <span class="fs-4 fw-normal text-dark">749.150 VND</span>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input rounded-0" type="checkbox" id="agreeTerms">
+                        <label class="form-check-label small text-primary" for="agreeTerms">
+                            Tôi đã đọc và đồng ý điều kiện giao dịch Website.
+                        </label>
+                    </div>
+
+                    <button class="btn btn-dark w-100 py-3 text-uppercase fw-bold rounded-0">
+                        Đặt hàng miễn phí ship
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="placeholder-footer" style="height: 200px; background: #000;"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        function increaseQty(btn) {
+            let input = btn.previousElementSibling;
+            input.value = parseInt(input.value) + 1;
+        }
+        function decreaseQty(btn) {
+            let input = btn.nextElementSibling;
+            if (parseInt(input.value) > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+    </script>
+</body>
+</html>
