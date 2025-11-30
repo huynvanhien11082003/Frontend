@@ -3,8 +3,8 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #333;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 40px;
     transition: color 0.3s ease;
 }
 
@@ -322,7 +322,6 @@ footer.bg-black {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Tên sản phẩm */
 .product-name {
     color: #333;
     font-size: 16px;
@@ -337,7 +336,6 @@ footer.bg-black {
     color: #ee4d2d;
 }
 
-/* Giá tiền */
 .old-price {
     font-size: 12px;
     color: #999;
