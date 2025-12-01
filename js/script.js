@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     if (triggerTabList.length > 0) {
         triggerTabList.forEach(function (triggerEl) {
-            // Sự kiện: Rê chuột vào nút -> Chuyển Tab
             triggerEl.addEventListener("mouseenter", function (event) {
                 var tabInstance = bootstrap.Tab.getOrCreateInstance(triggerEl);
                 tabInstance.show();
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         el_btn.setAttribute("aria-expanded", "true");
                     }
                 });
-                // Chuột ra -> Ẩn menu
                 everyDropdown.addEventListener("mouseleave", function (e) {
                     let el_btn = this.querySelector(".dropdown-toggle");
                     let el_menu = this.querySelector(".dropdown-menu");
@@ -80,30 +78,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function changeImage(clickedThumbnail) {
-    // Lấy thẻ ảnh chính
+
     const mainImage = document.getElementById("mainImage");
 
-    // Đổi nguồn ảnh chính thành nguồn của ảnh nhỏ vừa bấm
+
     mainImage.src = clickedThumbnail.src;
 
-    // Xóa viền đen ở TẤT CẢ ảnh nhỏ
+
     document.querySelectorAll(".thumb-img").forEach((thumb) => {
-        thumb.classList.remove("border-dark"); // Bỏ viền đen
-        thumb.classList.add("border-transparent"); // Thêm viền trong suốt
+        thumb.classList.remove("border-dark"); 
+        thumb.classList.add("border-transparent"); 
     });
 
-    // Thêm viền đen cho ảnh nhỏ VỪA BẤM
+
     clickedThumbnail.classList.remove("border-transparent");
     clickedThumbnail.classList.add("border-dark");
 }
 
-// 2. Hàm cập nhật text Size khi chọn
+
 function updateSize(size) {
     const sizeLabel = document.getElementById("selectedSize");
     if (sizeLabel) sizeLabel.innerText = size;
 }
 
-// 3. Hàm tăng giảm số lượng
+
 function increaseQty(btn) {
     let input = btn.previousElementSibling;
     input.value = parseInt(input.value) + 1;
@@ -115,3 +113,22 @@ function decreaseQty(btn) {
         input.value = parseInt(input.value) - 1;
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const stars = document.querySelectorAll('.rating-stars i');
+
+    stars.forEach(star => {
+        star.addEventListener('click', function() {
+            const rating = this.getAttribute('data-value');
+            
+            stars.forEach(s => {
+                s.classList.remove('bi-star-fill');
+                s.classList.add('bi-star');
+            });
+
+            for(let i = 0; i < rating; i++) {
+                stars[i].classList.remove('bi-star');
+                stars[i].classList.add('bi-star-fill');
+            }
+        });
+    });
+});
