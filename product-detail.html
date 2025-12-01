@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm - YaMe.vn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container-fluid px-4 px-lg-5">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo_YaMe_2025.png" alt="Logo" height="35" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5 text-uppercase fw-bold" style="font-size: 13px">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarSale" role="button"
+                                data-bs-toggle="dropdown">
+                                <i class="bi bi-battery-full me-1"></i> SALE
+                            </a>
+
+                            <ul class="dropdown-menu sale-dropdown" aria-labelledby="navbarSale">
+                                <li>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                        <span>BLACK FRIDAY</span>
+                                        <span class="badge bg-danger ms-2" style="font-size: 10px">HOT</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="sale/sale-quan-ao.html">Sale Áo Thun, Áo Khoác, Sơ
+                                        Mi</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="sale/sale-quan-dai.html">Sale Quần Dài, Quần Short,
+                                        Quần Jeans</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="sale/sale-balo-tui.html">Sale Balo, Túi, Giày</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="sale/sale-vi-non.html">Sale Dép, Ví, Nón, Dây Nịt,
+                                        Vớ...</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="sale/sale-manga.html">Manga Super Sale</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="sale/sale-gia-db.html">Sale Phụ Kiện Thể Thao, Đồ
+                                        Tiện Ích</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="gu/gu.html" id="navbarGu">
+                                GU
+                            </a>
+
+                            <div class="dropdown-menu mega-menu" aria-labelledby="navbarGu">
+                                <div class="row g-0">
+                                    <div class="col-md-3 left-menu">
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab">
+                                            <a class="nav-link active text-start rounded-0" id="v-pills-simple-tab"
+                                                href="gu/gu-don-gian.html" data-bs-target="#v-pills-simple">
+                                                <i class="bi bi-tshirt me-2"></i> GU ĐƠN GIẢN
+                                            </a>
+
+                                            <a class="nav-link text-start rounded-0" id="v-pills-design-tab"
+                                                href="gu/gu-thiet-ke.html" data-bs-target="#v-pills-design">
+                                                <i class="bi bi-palette me-2"></i> GU THIẾT KẾ
+                                            </a>
+
+                                            <a class="nav-link text-start rounded-0" id="v-pills-sport-tab"
+                                                href="gu/gu-the-thao.html" data-bs-target="#v-pills-sport">
+                                                <i class="bi bi-controller me-2"></i> GU THỂ THAO
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-9 right-content">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-simple" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <span class="sub-title">Trạm Thiết Yếu</span>
+                                                        <hr class="my-2" />
+                                                        <a href="gu/non-brand.html" class="sub-link">Non Branded
+                                                            (Bền)</a>
+                                                        <a href="gu/seventeen.html" class="sub-link">Seventy Seven</a>
+                                                        <a href="gu/theworker.html" class="sub-link">The Worker (nhiều
+                                                            túi)</a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="sub-title">Trạm Jean</span>
+                                                        <hr class="my-2" />
+                                                        <a href="gu/gu.html" class="sub-link">Original Jean</a>
+                                                        <a href="gu/tekbackjean.html" class="sub-link">Tek Black
+                                                            Jean</a>
+                                                        <a href="gu/multicolorjean.html" class="sub-link">Multi color
+                                                            Jean</a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="sub-title">Trạm Công Nghệ</span>
+                                                        <hr class="my-2" />
+                                                        <a href="gu/theminimalist.html" class="sub-link">Minimalist</a>
+                                                        <a href="gu/theceo.html" class="sub-link">The CEO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="v-pills-design" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <span class="sub-title">Trạm dịch chuyển</span>
+                                                        <hr class="my-2" />
+                                                        <a href="ao/aokhoacdongian.html" class="sub-link">Áo khoác đơn
+                                                            giản</a>
+                                                        <a href="ao/aokhoaccatinh.html" class="sub-link">Áo khoác cá
+                                                            tính</a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="sub-title">Trạm tận hưởng</span>
+                                                        <hr class="my-2" />
+                                                        <a href="gu/thenostyle.html" class="sub-link">The No Style</a>
+                                                        <a href="gu/theweekend.html" class="sub-link">The Weekend</a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <span class="sub-title">Collab Đặc Biệt</span>
+                                                        <hr class="my-2" />
+                                                        <a href="gu/onepiece.html" class="sub-link">One Piece</a>
+                                                        <a href="gu/dragonballz.html" class="sub-link">Dragon Ball Z</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="v-pills-sport" role="tabpanel">
+                                                <div class="row g-0 h-100">
+                                                    <div class="col-md-4 border-end">
+                                                        <div class="list-group list-group-flush pt-2">
+                                                            <a href="gu/thebeginer.html" class="sport-link">
+                                                                The Beginner (Mới bắt đầu)
+                                                            </a>
+
+                                                            <a href="gu/thetrainer.html" class="sport-link">
+                                                                The Trainer (Tập chuyên nghiệp)
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-8 bg-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarAo" role="button"
+                                data-bs-toggle="dropdown">
+                                ÁO
+                            </a>
+
+                            <div class="dropdown-menu mega-menu" aria-labelledby="navbarAo">
+                                <div class="content px-4 py-3 bg-white">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <span class="sub-title text-uppercase fw-bold">
+                                                <i class="bi bi-tshirt me-2"><img src="img/1754041258_0_440x.png"
+                                                        style="width: 20px" alt="" /></i>
+                                                ÁO THUN
+                                            </span>
+                                            <hr class="my-2" />
+                                            <a href="ao/ao-thun-co-tron.html" class="sub-link">Áo Thun Cổ Tròn</a>
+                                            <a href="ao/ao-polo.html" class="sub-link">Áo Polo</a>
+                                            <a href="ao/ao-thun-tay-dai.html" class="sub-link">Áo Thun Tay Dài</a>
+                                            <a href="ao/ao-tank-top.html" class="sub-link">Áo Tank Top (Áo Ba Lỗ)</a>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <span class="sub-title text-uppercase fw-bold">
+                                                <i class="bi bi-person-badge me-2"></i> ÁO SƠ MI
+                                            </span>
+                                            <hr class="my-2" />
+                                            <a href="ao/ao-somi-tay-ngan.html" class="sub-link">Áo Sơ Mi Tay Ngắn</a>
+                                            <a href="ao/ao-somi-tay-dai.html" class="sub-link">Áo Sơ Mi Tay Dài</a>
+                                            <a href="ao/ao-somi-khoac.html" class="sub-link">Áo Sơ Mi Khoác</a>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <span class="sub-title text-uppercase fw-bold">
+                                                <i class="bi bi-snow me-2"></i> ÁO KHOÁC
+                                            </span>
+                                            <hr class="my-2" />
+                                            <a href="ao/ao-khoac-parka.html" class="sub-link">Áo Khoác Parka</a>
+                                            <a href="ao/ao-khoac-jean.html" class="sub-link">Áo Khoác Jean</a>
+                                            <a href="ao/ao-khoac-kaki.html" class="sub-link">Áo Khoác Kaki</a>
+                                            <a href="ao/ao-khoac-du.html" class="sub-link">Áo Khoác Dù</a>
+                                            <a href="ao/ao-khoac-bomber.html" class="sub-link">Áo Khoác Bomber</a>
+                                            <a href="ao/ao-khoac-hoodie.html" class="sub-link">Áo Khoác Hoodie</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarAo" role="button"
+                                data-bs-toggle="dropdown">
+                                QUẦN
+                            </a>
+
+                            <div class="dropdown-menu mega-menu" aria-labelledby="navbarAo">
+                                <div class="content px-4 py-3 bg-white">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <span class="sub-title text-uppercase fw-bold">
+                                                <i>
+                                                    <img src="img/quanshort.png" alt="" style="width: 20px" /></i>
+                                                QUẦN SHORT
+                                            </span>
+                                            <hr class="my-2" />
+                                            <a href="quan/quan-short-thun.html" class="sub-link">Quần Short thun</a>
+                                            <a href="quan/quan-short-du.html" class="sub-link">Quần Short dù</a>
+                                            <a href="quan/quan-short-kaki.html" class="sub-link">Quần Short kaki</a>
+                                            <a href="quan/quan-short-active.html" class="sub-link">Quần Short active</a>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <span class="sub-title text-uppercase fw-bold">
+                                                <i class=""><img src="img/quandai.png" alt="" style="width: 20px" /></i>
+                                                QUẦN DÀI
+                                            </span>
+                                            <hr class="my-2" />
+                                            <a href="quan/quan-tay.html" class="sub-link">Quần Tây</a>
+                                            <a href="quan/quan-jogger.html" class="sub-link">Quần Jogger</a>
+                                            <a href="quan/quan-kaki.html" class="sub-link">Quần Kaki</a>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <span class="sub-title text-uppercase fw-bold">
+                                                <i><img src="img/quanjeans.png" alt="" style="width: 20px" /></i>
+                                                QUẦN JEANS
+                                            </span>
+                                            <hr class="my-2" />
+                                            <a href="quan/quan-jeans-slim-fit.html" class="sub-link">Quần Jeans Slim
+                                                Fit</a>
+                                            <a href="quan/quan-jeans-loose-fit.html" class="sub-link">Quần Jeans Loose
+                                                Fit</a>
+                                            <a href="quan/quan-jeans-jogger.html" class="sub-link">Quần Jeans Jogger</a>
+                                            <a href="quan/quan-jeans-short.html" class="sub-link">Quần Jeans Short</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <span class="sub-title text-uppercase fw-bold">
+                                                <i><img src="img/quanlot.png" alt="" style="width: 20px" /></i>
+                                                QUẦN LÓT
+                                            </span>
+                                            <hr class="my-2" />
+                                            <a href="quanlot/quanlot-soi-tu-nhien.html" class="sub-link">Quần lót sợi tự
+                                                nhiên</a>
+                                            <a href="quanlot/quanlot-seamless.html" class="sub-link">Quần lót
+                                                Seamless</a>
+                                            <a href="quanlot/quanlot-luabang.html" class="sub-link">Quần lót Lụa
+                                                băng</a>
+                                            <a href="quanlot/quanlot-thethao.html" class="sub-link">Quần lót thể
+                                                thao</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="moi.html">MỚI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cuahang.html">CỬA HÀNG</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">VIP</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-search fs-5" style="cursor: pointer"></i>
+                        <a href="login.html" style="cursor: pointer">
+                            <i class="bi bi-person fs-5"></i>
+                        </a>
+                        <div class="position-relative" style="cursor: pointer">
+                            <i class="bi bi-bag fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                                style="font-size: 10px">
+                                0
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-3">
+        <div class="container">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb yame-breadcrumb small">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Trang
+                            chủ</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">Bộ sưu tập Non
+                            Branded</a></li>
+                    <li class="breadcrumb-item active text-dark" aria-current="page">Áo polo Basic...</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="product-detail-page pb-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-7 mb-4">
+
+                    <div class="product-gallery position-relative bg-light-grey p-4 rounded-3">
+                        <div class="new-badge">MỚI</div>
+
+                        <img src="img/NonBranded056NauD_m24654thumb1.png" id="mainImage" class="w-100 object-fit-cover"
+                            alt="Ảnh chính">
+                    </div>
+
+                    <div class="row mt-3 g-2">
+                        <div class="col-3">
+                            <img src="img/NonBranded056NauD_m24654thumb2.png"
+                                class="w-100 rounded-2 cursor-pointer border border-dark thumb-img"
+                                onclick="changeImage(this)" alt="Thumb 1">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/NonBranded056NauD_m24654thumb3.jpg"
+                                class="w-100 rounded-2 cursor-pointer border border-transparent thumb-img"
+                                onclick="changeImage(this)" alt="Thumb 2">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/NonBranded056NauD_m24654thumb4.png"
+                                class="w-100 rounded-2 cursor-pointer border border-transparent thumb-img"
+                                onclick="changeImage(this)" alt="Thumb 3">
+                        </div>
+                        <div class="col-3">
+                            <img src="img/NonBranded056NauD_m24654thumb5.png"
+                                class="w-100 rounded-2 cursor-pointer border border-transparent thumb-img"
+                                onclick="changeImage(this)" alt="Thumb 4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <h1 class="fw-normal mb-3" style="font-size: 26px; line-height: 1.4;">Áo polo Basic Co Giãn Thoáng
+                        Mát Non Branded 056 Xanh Dương</h1>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <span class="text-decoration-line-through text-muted me-3">277.000 VND</span>
+                        <span class="fs-4 fw-bold me-3">263.150 VND</span>
+                        <span class="badge bg-light text-dark border rounded-pill fw-normal px-3">Miễn Phí Ship</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="mb-2 small text-muted">Size: <span class="fw-bold text-dark"
+                                id="selectedSize">S</span></p>
+                        <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="size" id="sizeS" checked>
+                            <label class="btn btn-outline-dark rounded-0 size-box" for="sizeS"
+                                onclick="updateSize('S')">S</label>
+
+                            <input type="radio" class="btn-check" name="size" id="sizeM">
+                            <label class="btn btn-outline-dark rounded-0 size-box" for="sizeM"
+                                onclick="updateSize('M')">M</label>
+
+                            <input type="radio" class="btn-check" name="size" id="sizeL">
+                            <label class="btn btn-outline-dark rounded-0 size-box" for="sizeL"
+                                onclick="updateSize('L')">L</label>
+
+                            <input type="radio" class="btn-check" name="size" id="sizeXL">
+                            <label class="btn btn-outline-dark rounded-0 size-box" for="sizeXL"
+                                onclick="updateSize('XL')">XL</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="mb-2 small text-muted">Số lượng</p>
+                        <div class="quantity-control d-flex align-items-center border" style="width: 120px;">
+                            <button class="btn btn-light border-0" onclick="decreaseQty(this)">-</button>
+                            <input type="text" value="1"
+                                class="form-control border-0 text-center p-0 h-100 bg-transparent"
+                                style="font-size: 16px;">
+                            <button class="btn btn-light border-0" onclick="increaseQty(this)">+</button>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-black w-100 py-3 text-uppercase fw-bold mb-4"
+                        style="background: #000; color: #fff; border-radius: 0;">
+                        Thêm vào giỏ hàng
+                    </button>
+
+                    <div class="row text-center mb-5 g-0">
+                        <div class="col-4">
+                            <i class="bi bi-shield-check fs-2 mb-2 d-block"></i> <span class="small">Bảo Hành 365
+                                Ngày</span>
+                        </div>
+                        <div class="col-4 border-start border-end">
+                            <i class="bi bi-truck fs-2 mb-2 d-block"></i> <span class="small">Miễn Phí Ship</span>
+                        </div>
+                        <div class="col-4">
+                            <i class="bi bi-arrow-counterclockwise fs-2 mb-2 d-block"></i> <span class="small">Đổi Trả
+                                14 Ngày</span>
+                        </div>
+                    </div>
+                    <div class="review-summary text-center mt-5 pt-4 border-top">
+                        <div class="text-warning fs-4 mb-2">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <p class="text-muted small">Hãy là người đầu tiên viết đánh giá</p>
+
+                        <button type="button" class="btn btn-outline-dark rounded-pill px-4 py-2 fw-bold"
+                            data-bs-toggle="modal" data-bs-target="#reviewModal">
+                            Viết đánh giá
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-black text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row border-bottom border-secondary pb-4 mb-5">
+                <div class="col-md-3 d-flex align-items-center mb-3 mb-md-0">
+                    <i class="bi bi-box-seam fs-2 me-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-0 text-uppercase">Miễn phí ship</h6>
+                        <small class="text-secondary">Toàn quốc</small>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center mb-3 mb-md-0">
+                    <i class="bi bi-shield-check fs-2 me-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-0 text-uppercase">Bảo hành</h6>
+                        <small class="text-secondary">365 ngày</small>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center mb-3 mb-md-0">
+                    <i class="bi bi-shop fs-2 me-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-0 text-uppercase">Địa chỉ</h6>
+                        <small class="text-secondary">Cửa hàng YaMe VN</small>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center">
+                    <i class="bi bi-journal-text fs-2 me-3"></i>
+                    <div>
+                        <h6 class="fw-bold mb-0 text-uppercase">Tạp chí</h6>
+                        <small class="text-secondary">Thông tin thời trang</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-6 col-lg-2 mb-4">
+                    <h6 class="fw-bold text-uppercase mb-3">Quần Áo</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Áo Thun</a></li>
+                        <li><a href="#">Áo Khoác</a></li>
+                        <li><a href="#">Áo Sơ Mi</a></li>
+                        <li><a href="#">Quần Dài</a></li>
+                        <li><a href="#">Quần Short</a></li>
+                        <li><a href="#">Quần Jeans</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-4">
+                    <h6 class="fw-bold text-uppercase mb-3">Phụ Kiện</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Balo</a></li>
+                        <li><a href="#">Túi Đeo</a></li>
+                        <li><a href="#">Nón</a></li>
+                        <li><a href="#">Ví</a></li>
+                        <li><a href="#">Giày</a></li>
+                        <li><a href="#">Dép</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-4">
+                    <h6 class="fw-bold text-uppercase mb-3">GU của YaMe</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#" class="text-white fw-bold">GU ĐƠN GIẢN</a></li>
+                        <li><a href="#">Trạm Thiết Yếu</a></li>
+                        <li><a href="#">Trạm Công Nghệ</a></li>
+                        <li>
+                            <a href="#" class="text-white fw-bold mt-2 d-block">GU THIẾT KẾ</a>
+                        </li>
+                        <li><a href="#">Trạm Tận Hưởng</a></li>
+                        <li><a href="#">Trạm Collab</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-4">
+                    <h6 class="fw-bold text-uppercase mb-3">Về YaMe</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Cửa Hàng</a></li>
+                        <li><a href="#">Bảo Hành</a></li>
+                        <li><a href="#">Đổi Trả</a></li>
+                        <li><a href="#">Chính Sách VIP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-4">
+                    <h6 class="fw-bold text-uppercase mb-3">
+                        Gia nhập Cộng đồng YaMer
+                    </h6>
+
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-dark text-white border-0"
+                                placeholder="Nhập email..." style="height: 45px" />
+                            <button class="btn btn-light fw-bold" type="button" style="height: 45px">
+                                Đăng Ký
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="social-icons mt-4">
+                        <a href="#" class="me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-tiktok fs-4"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-4 text-center text-secondary" style="font-size: 12px">
+                <p class="mb-1">
+                    © 2025 - HỘ KINH DOANH Y2010 - YAME VN. Mã số HKD: 0306194105-007 -
+                    Đăng ký lần đầu: 06/03/2024
+                </p>
+                <p class="mb-1">
+                    Cơ quan cấp: UBND Quận 10 - Phòng Tài chính - Kế hoạch. Địa chỉ đăng
+                    ký kinh doanh: 766/3B Sư Vạn Hạnh (Nối dài), Phường 12, Quận 10,
+                    TP.HCM
+                </p>
+                <p>
+                    Điện thoại: (028) 3868 4857 - Mua hàng: (028) 7307 1441 - Email:
+                    cskh@yame.vn
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            
+            <div class="modal-body p-5">
+                <h4 class="text-center fw-normal mb-1">Đánh giá</h4>
+                
+                <div class="text-center mb-4 rating-stars">
+                    <i class="bi bi-star fs-2 text-warning cursor-pointer" data-value="1"></i>
+                    <i class="bi bi-star fs-2 text-warning cursor-pointer" data-value="2"></i>
+                    <i class="bi bi-star fs-2 text-warning cursor-pointer" data-value="3"></i>
+                    <i class="bi bi-star fs-2 text-warning cursor-pointer" data-value="4"></i>
+                    <i class="bi bi-star fs-2 text-warning cursor-pointer" data-value="5"></i>
+                </div>
+
+                <form>
+                    <div class="mb-4">
+                        <label class="form-label text-muted small">Nội dung đánh giá</label>
+                        <textarea class="form-control bg-light border-0" rows="4" placeholder="Bắt đầu viết ở đây..."></textarea>
+                    </div>
+
+                    <div class="mb-4 text-center">
+                        <label class="form-label text-muted small d-block text-start">Hình ảnh/Video (tùy chọn)</label>
+                        <div class="upload-box d-flex justify-content-center align-items-center">
+                            <i class="bi bi-upload fs-3 text-secondary"></i>
+                            <input type="file" class="d-none" id="fileUpload">
+                        </div>
+                        <script>
+                            document.querySelector('.upload-box').addEventListener('click', () => document.getElementById('fileUpload').click());
+                        </script>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label text-muted small">Tên hiển thị (hiển thị công khai như <i class="bi bi-person"></i> )</label>
+                        <input type="text" class="form-control rounded-pill" placeholder="Tên hiển thị">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label text-muted small">Địa chỉ email</label>
+                        <input type="email" class="form-control rounded-pill" placeholder="Địa chỉ email của bạn">
+                    </div>
+
+                    <p class="text-muted small text-center mb-4" style="font-size: 12px; line-height: 1.6;">
+                        Cách chúng tôi sử dụng dữ liệu của bạn: Chúng tôi sẽ chỉ liên hệ với bạn về đánh giá bạn đã để lại...
+                        <a href="#" class="text-primary text-decoration-underline">điều khoản</a>, <a href="#" class="text-primary text-decoration-underline">quyền riêng tư</a>...
+                    </p>
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <button type="button" class="btn btn-outline-dark rounded-pill px-5 py-2 fw-bold" data-bs-dismiss="modal">Hủy đánh giá</button>
+                        <button type="submit" class="btn btn-dark rounded-pill px-5 py-2 fw-bold">Gửi Đánh giá</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -442,6 +442,76 @@ footer.bg-black {
 .bg-light-grey img {
     mix-blend-mode: multiply; 
 }
+
+
+.bg-light-grey {
+    background-color: #f8f8f8;
+}
+
+.new-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 45px;
+    height: 45px;
+    background-color: #1a2a44; 
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 800;
+    z-index: 5;
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+.border-transparent {
+    border-color: transparent !important;
+}
+
+
+.thumb-img:hover {
+    opacity: 0.8;
+}
+
+
+.size-box {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+
+.btn-check:checked + .btn-outline-dark {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+
+.quantity-control button {
+    width: 35px;
+    height: 40px;
+    border-radius: 0;
+}
+.quantity-control button:hover {
+    background-color: #e9ecef;
+}
+.quantity-control input:focus {
+    box-shadow: none;
+}
+
 @media (min-width: 992px) {
     .dropdown:hover .dropdown-menu {
         display: block;
