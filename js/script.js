@@ -132,3 +132,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+function validateRegister(e) {
+            e.preventDefault(); // Ngăn form gửi đi để kiểm tra trước
+            
+            const pass = document.getElementById('regPassword').value;
+            const confirmPass = document.getElementById('regConfirmPassword').value;
+            const errorMsg = document.getElementById('passwordError');
+
+            if (pass !== confirmPass) {
+                errorMsg.classList.remove('d-none'); // Hiện lỗi
+                return false;
+            } else {
+                errorMsg.classList.add('d-none'); // Ẩn lỗi
+                alert('Đăng ký thành công!'); // (Giả lập)
+                // window.location.href = 'login.html'; // Chuyển hướng
+            }
+        }

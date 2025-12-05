@@ -698,6 +698,26 @@ footer.bg-black {
 .text-decoration-underline {
     text-underline-offset: 4px; 
 }
+
+.yame-input {
+    border-radius: 0;
+    height: 45px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+.yame-input:focus {
+    box-shadow: none;
+    border-color: #000;
+}
+.btn-yame {
+    border-radius: 0;
+    transition: all 0.3s ease;
+    border: 1px solid #000;
+}
+.btn-yame:hover {
+    background-color: #fff;
+    color: #000;
+}
 @keyframes fadeUp {
     from {
         opacity: 0;
